@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="900"
+     height="80"
+     viewBox="0 0 900 80">
+
+  <defs>
+    <clipPath id="sliceTop">
+      <rect x="0" y="15" width="900" height="15">
+        <animate attributeName="y"
+                 values="15;15;32;15;15"
+                 dur="1.2s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="sliceBottom">
+      <rect x="0" y="37" width="900" height="12"/>
+    </clipPath>
+  </defs>
+
+  <!-- Base text -->
+  <text x="450" y="48"
+        text-anchor="middle"
+        fill="#B3B3B3"
+        font-family="Cormorant Garamond, Georgia, serif"
+        font-size="29"
+        font-style="italic"
+        font-weight="400"
+        letter-spacing="0.4">
+    Origin Of Syntax, "Syntassein"
+    <animate attributeName="opacity"
+             values="1;1;0.2;1;0.4;1;1"
+             keyTimes="0;0.08;0.10;0.13;0.15;0.19;1"
+             dur="1.2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Bright horizontal split -->
+  <g clip-path="url(#sliceTop)">
+    <text x="450" y="48"
+          text-anchor="middle"
+          fill="#FFFFFF"
+          font-family="Cormorant Garamond, Georgia, serif"
+          font-size="29"
+          font-style="italic"
+          letter-spacing="0.4"
+          opacity="0">
+      Origin Of Syntax, "Syntassein"
+      <animate attributeName="opacity"
+               values="0;0;1;0;0.8;0;0"
+               keyTimes="0;0.08;0.10;0.13;0.15;0.19;1"
+               dur="1.2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform"
+                        type="translate"
+                        values="0 0;0 0;12 -2;-9 1;7 0;0 0"
+                        keyTimes="0;0.08;0.10;0.13;0.15;1"
+                        dur="1.2s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Lower displacement -->
+  <g clip-path="url(#sliceBottom)">
+    <text x="450" y="48"
+          text-anchor="middle"
+          fill="#777777"
+          font-family="Cormorant Garamond, Georgia, serif"
+          font-size="29"
+          font-style="italic"
+          letter-spacing="0.4"
+          opacity="0">
+      Origin Of Syntax, "Syntassein"
+      <animate attributeName="opacity"
+               values="0;0;1;0;0.7;0;0"
+               keyTimes="0;0.09;0.11;0.14;0.16;0.2;1"
+               dur="1.2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform"
+                        type="translate"
+                        values="0 0;0 0;-14 1;10 -1;-5 0;0 0"
+                        keyTimes="0;0.09;0.11;0.14;0.16;1"
+                        dur="1.2s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+</svg>
